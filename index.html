@@ -10,10 +10,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>Previsão de Câncer de Mama</h1>
+            <h1>Modelo da Machine Learning para previsão de cancer de mama</h1>
         </header>
 
         <main>
+            <img src="bc.png.jpg" alt="mulher">
             <section class="form-section">
                 <h2>Adicionar Novo Paciente</h2>
                 <form id="predictionForm" onsubmit="event.preventDefault(); newItem();">
@@ -32,32 +33,35 @@
                     <label for="area_mean">Média da Área:</label>
                     <input type="number" id="area_mean" step="any" required>
 
-                    <button type="submit">Ver Previsão</button>
+                    <label for="area_mean">Média da Suavidade:</label>
+                    <input type="number" id="area_mean" step="any">
+
+                    <button type="submit">Faça sua Previsão</button>
                 </form>
             </section>
 
-            <section class="records-section">
-                <h2>Registros</h2>
-                <div class="records-container">
-                    <table id="recordsTable">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Raio Médio</th>
-                                <th>Textura Média</th>
-                                <th>Perímetro Médio</th>
-                                <th>Área Média</th>
-                                <th>Previsão</th>
-                                <th>Ação</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Registros serão inseridos aqui -->
-                        </tbody>
-                    </table>
-                </div>
-            </section>
         </main>
+        <section class="records-section">
+            <h2>Registros</h2>
+            <div class="records-container">
+                <table id="recordsTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Raio Médio</th>
+                            <th>Textura Média</th>
+                            <th>Perímetro Médio</th>
+                            <th>Área Média</th>
+                            <th>Previsão</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Registros serão inseridos aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    

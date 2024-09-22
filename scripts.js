@@ -1,4 +1,6 @@
-
+$(document).ready(function() {
+    getList();     
+});
 /*
   --------------------------------------------------------------------------------------
   Função para obter a lista existente do servidor via requisição GET
