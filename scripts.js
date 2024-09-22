@@ -1,6 +1,8 @@
-$(document).ready(function() {
-    getList();     
+document.getElementById("predictionForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+    newItem(); // Chama a função que adiciona o novo item
 });
+
 
 /*
   --------------------------------------------------------------------------------------
@@ -240,4 +242,3 @@ const insertList = (namePatient, radiusMean, textureMean, perimeterMean, areaMea
 
     document.getElementById("predictionForm").reset();
 }
-
