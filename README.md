@@ -1,25 +1,20 @@
-# WEB Classificação de Cânceres de Mama
+# WEB Classificação de Câncer de Mama
 
-O projeto **WEB Classificação de Cânceres de Mama** tem como objetivo fornecer funcionalidades para gerenciar e classificar informações relacionadas a pacientes com câncer de mama. Isso inclui:
+## O projeto WEB Classificação de Câncer de Mama tem como objetivo oferecer funcionalidades para gerenciar e classificar informações sobre pacientes com câncer de mama. As principais funcionalidades incluem:
 
-- Inclusão de novos pacientes
-- Consulta detalhada de perfis de pacientes
+- Adição de novos pacientes
+- Consulta detalhada dos perfis dos pacientes
 - Exclusão de registros de pacientes
 - Classificação de cânceres de mama com base nos dados fornecidos
+### Tecnologias Utilizadas
 
-## Tecnologias Utilizadas
-- **HTML5**: Estrutura da interface do usuário.
-- **CSS3**: Estilos e layout da página.
-- **JavaScript**: Funcionalidades e interações da página.
-- **jQuery**: Biblioteca JavaScript para manipulação de DOM, eventos e simplificação de requisições AJAX.
+- HTML5: Responsável pela estrutura da interface do usuário.
+- CSS3: Utilizado para estilização e layout da página.
+- JavaScript: Implementa funcionalidades e interações na página.
+- jQuery: Biblioteca JavaScript que facilita a manipulação do DOM, o gerenciamento de eventos e a realização de requisições AJAX.
+- Pré-requisitos
 
-## Pré-requisitos
 Para executar o projeto localmente, você precisará de:
-- Um navegador moderno (Google Chrome, Firefox, Edge, etc.).
-- Um servidor HTTP simples (opcional, para teste local com servidor).
 
-## Como Executar o Projeto
-
-### Clonar o Repositório
-```bash
-git clone https://github.com/LuizCarls/app_classifica_cancer_mama_ui.git
+Um navegador moderno (como Google Chrome, Firefox, Edge, etc.).
+Um servidor HTTP simples (opcional, para testes locais com servidor).
