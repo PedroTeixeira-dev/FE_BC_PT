@@ -17,4 +17,4 @@
 Para executar o projeto localmente, você precisará de:
 
 Um navegador moderno (como Google Chrome, Firefox, Edge, etc.).
-Um servidor HTTP simples (opcional, para testes locais com servidor).
+Um servidor HTTP simples (opcional, para testes locais com servidor). 
