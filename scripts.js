@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    getList();     
+    getList();
 });
 /*
   --------------------------------------------------------------------------------------
@@ -25,8 +25,8 @@ const getList = async () => {
             data.pacientes.pacientes.forEach(item => {
                 if (item.name && item.radius_mean && item.texture_mean && item.perimeter_mean && item.area_mean) {
                     insertList(
-                        item.name, 
-                        item.radius_mean, 
+                        item.name,
+                        item.radius_mean,
                         item.texture_mean,
                         item.perimeter_mean,
                         item.area_mean,
@@ -70,7 +70,7 @@ const postItem = async (name, radius, texture, perimeter, area) => {
         }
 
         const data = await response.json();
-        return data; 
+        return data;
     } catch (error) {
         console.error('Erro:', error);
         return null;
@@ -87,7 +87,7 @@ const insertDeleteButton = (parent) => {
     icon.className = "fa fa-trash close";
     icon.onclick = async function() {
         let row = this.closest("tr");
-        const nomeItem = row.getElementsByTagName('td')[0].textContent; 
+        const nomeItem = row.getElementsByTagName('td')[0].textContent;
         const result = await Swal.fire({
             title: 'Você tem certeza?',
             text: "Este item será removido.",
@@ -189,7 +189,7 @@ const newItem = async () => {
             });
 
             if (result.isConfirmed) {
-                await postItem(inputName, inputRadiusMean, inputTextureMean, inputPerimeterMean, inputAreaMean);                
+                await postItem(inputName, inputRadiusMean, inputTextureMean, inputPerimeterMean, inputAreaMean);
                 Swal.fire(
                     'Adicionado!',
                     'O item foi adicionado com sucesso!',
@@ -232,7 +232,7 @@ const insertList = (namePatient, radiusMean, textureMean, perimeterMean, areaMea
         const cell = row.insertCell(index);
         cell.textContent = value;
     });
-    
+
     const deleteCell = row.insertCell(item.length);
     deleteCell.className = "table-action";
     insertDeleteButton(deleteCell);
